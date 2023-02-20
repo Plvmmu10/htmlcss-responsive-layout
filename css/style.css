@@ -63,6 +63,9 @@ button{
 
 .app-store{
     background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app-store > *{
@@ -188,10 +191,11 @@ main{
 }
 
 /* PLANNING SECTION CONFIG */
-
-#planning img{
+.planning-left img{
     width: 100%;
-    display: block;
+}
+.planning-right img{
+    width: 100%;
 }
 
 .planning-content h2{
@@ -432,4 +436,112 @@ footer a{
             width: 60%;    
     }
 
+}
+
+@media screen and (min-width:992px){
+    
+    .container{
+        margin: 0 auto;
+        width: 80%;
+    }
+    /* Intro section */
+    #intro .container{
+        display: flex; 
+        flex-flow: row wrap;
+    }
+
+    #intro .card{
+        width: calc((100% / 3) - 20px);
+        height: calc((100% / 2) - 20px);
+    }
+
+    #intro .card:first-child{
+        width: calc((100% / 3 * 2) - 20px);
+        display: flex;
+    }
+
+    .card-left{
+        width: 100%;
+    }
+
+    .app-store{
+        padding: 10px;
+    }
+
+    .card-right{
+        width: 48%;
+    }
+
+    .card-right img{       
+        width: 100%;
+        display: block;
+        position: relative;
+        bottom: -20px;
+    }
+
+    .card-left button{
+
+        width: 50%;
+    }
+
+    /* Planning section */
+    #planning .container{
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    .planning-left{
+        margin-right: 20px;
+        width: 50%;
+    }
+
+    .planning-right{
+        width: 50%;
+        height: 100%;
+    }
+
+    .planning-right img{
+        width: 100%;
+    }
+
+    /* Testimonial section */
+
+
+    .testimonial{
+        display: flex;
+        flex-flow: row;
+    }
+
+    .testimonial .img-box{
+        width: 27%;
+    }
+
+    .testimonial-content > *{
+        text-align: left;
+    }
+
+    /* Benefit section */
+    .benefit-row{
+        display: flex;
+        flex-flow:row wrap ;
+    }
+
+    .benefit{
+        width: calc((100% / 3) - 20px);
+    }
+
+    /* About us section */
+    #about-us .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-right{
+        width: 50%;
+    }
+
+    .about-left{
+        width: 30%;
+    }
 }

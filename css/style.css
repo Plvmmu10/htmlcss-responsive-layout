@@ -127,9 +127,16 @@ main{
 }
 
 .card{
-    background-color: var(--bg-card);
     margin: 10px;
     padding: 20px;
+}
+
+#intro .card{
+    background-color: var(--bg-card);
+}
+
+#testimonials .card{
+    background-color: var(--light-color);
 }
 
 .card > *{
@@ -148,7 +155,7 @@ main{
 }
 
 
-/* DEMO CARD CONFIG */
+/* Demo Card Config */
 
 .card-left{
     width: 100%;
@@ -175,6 +182,42 @@ main{
     bottom: -20px;
 }
 
+/* PLANNING SECTION CONFIG */
+
+#planning img{
+    width: 100%;
+    display: block;
+}
+
+.planning-content h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.planning-content{
+    color: white;
+}
+
+.planning-right{
+    background-color: var(--light-color);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.developement-content > *{
+    padding: 15px;
+}
+
+.developement-content button{
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.developement-content button i{
+    color: black;
+}
 /* FOOTER CONFIG */
 footer{
     background-color: var(--dark-color);

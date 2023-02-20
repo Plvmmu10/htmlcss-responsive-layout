@@ -64,6 +64,7 @@ body{
 
 .app-store i{
     padding-right: 5px;
+    color: var(--light-color);
 }
 
 
@@ -106,6 +107,11 @@ nav ul{
     display: none;
 }
 
+nav i{
+    color: white;
+    font-size: 50px;
+}
+
 header nav a{
     color: var(--light-color);
 }
@@ -123,33 +129,50 @@ main{
 .card{
     background-color: var(--bg-card);
     margin: 10px;
+    padding: 20px;
 }
 
-#intro h3{
+.card > *{
+    padding-bottom: 20px;
+    
+}
+
+/* INTRO SECTION CONFIG */
+
+#intro h3, i{
     color: var(--secondary-color);
 }
+
+.main-icon{
+    font-size: 50px;
+}
+
 
 /* DEMO CARD CONFIG */
 
 .card-left{
     width: 100%;
-    padding: 20px;
     flex-flow: column;
-    align-items: center;
+    align-items: center;;
 }
 
 .card-left > *{
-    margin-bottom: 20px;
     width: 80%;
+    padding-bottom: 20px;   
 }
 
 .card-right{
     width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
 .card-right img{
     width: 100%;
     display: block;
+    position: relative;
+    bottom: -20px;
 }
 
 /* FOOTER CONFIG */

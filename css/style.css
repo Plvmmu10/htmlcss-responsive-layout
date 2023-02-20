@@ -51,9 +51,13 @@ body{
 }
 
 /* BUTTON CONFIG */
-.first-btn{
-    padding: 10px;
+button{
     border: 0;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.first-btn{  
     color: white;
 }
 
@@ -67,6 +71,8 @@ body{
     padding-right: 5px;
     color: var(--light-color);
 }
+
+
 
 
 
@@ -290,9 +296,34 @@ main{
     background-color: #9792E4;
     border: 0;
     width: 40%;
-    border-radius: 15px;
+    
 }
 
+/* ABOUT US SECTION CONFIG */
+.about-right{
+    margin-bottom: 15px;
+}
+
+.about-right h2{
+    padding: 10px;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.about-left button{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.about-left button i{
+    color: var(--light-color);
+}
+
+.about-left p{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+}
 
 /* FOOTER CONFIG */
 footer{

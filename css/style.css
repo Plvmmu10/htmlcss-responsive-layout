@@ -63,23 +63,19 @@ button{
 
 .app-store{
     background-color: var(--secondary-color);
-    justify-content: center;
-    align-content: center;
 }
 
-.app-store i{
+.app-store > *{
+    font-size: 20px;
+}
+
+.fa-apple{
     padding-right: 5px;
     color: var(--light-color);
 }
 
 
-
-
-
 /* FLEX CONFIG */
-.d-flex{
-    display: flex;
-}
 
 .wrap{
     flex-wrap: wrap;
@@ -108,6 +104,10 @@ header{
     width: 100%;
     z-index: 999;
     height: 80px;
+}
+
+nav{
+    display: flex;
 }
 
 nav ul{
@@ -164,8 +164,7 @@ main{
 /* Demo Card Config */
 
 .card-left{
-    width: 100%;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;;
 }
 
@@ -175,7 +174,7 @@ main{
 }
 
 .card-right{
-    width: 100%;
+    width: 80%;
     padding: 0;
     margin: 0;
     position: relative;
@@ -240,7 +239,8 @@ main{
 
 /* Testimonials card config */
 .testimonial{
-    flex-direction: column;
+    display: flex;
+    flex-direction:column;
     align-items: center;
 }
 
@@ -295,8 +295,7 @@ main{
     color: var(--light-color);
     background-color: #9792E4;
     border: 0;
-    width: 40%;
-    
+    width: 40%;   
 }
 
 /* ABOUT US SECTION CONFIG */
@@ -361,4 +360,76 @@ footer p{
 
 footer a{
     color: var(--primary-color);
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Intro section */
+    #intro .container{
+        display: flex; 
+        flex-flow: row wrap;
+    }
+
+    #intro .card{
+        width: calc((100% / 3) - 20px);
+    }
+
+    #intro .card:first-child{
+        width: calc((100% / 3 * 2) - 20px);
+    }
+
+    /* Testimonial section */
+    .testimonial{
+        display: flex;
+        flex-flow: row;
+    }
+
+    .testimonial .img-box{
+        width: 80%;
+    }
+
+    .testimonial-content > *{
+        text-align: left;
+    }
+
+    /* Benefit section */
+    .benefit-row{
+        display: flex;
+        flex-flow:row wrap ;
+    }
+
+    .benefit{
+        width: calc((100% / 2) - 20px);
+    }
+
+    /* About us section */
+    #about-us .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-right{
+        width: 50%;
+    }
+
+    .about-left{
+        width: 30%;
+    }
+
+    /* Call to action section */
+    #call-to-action .container{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    /* footer config */
+    footer .container{
+            margin: 0 auto;
+            width: 60%;    
+    }
+
 }

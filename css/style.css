@@ -1,0 +1,118 @@
+
+/* GENERAL CONFIGURATION */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+/* FONT */
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--light-color);
+}
+
+/* UTILITY */
+
+.text-center{
+    text-align: center;
+}
+
+.small-radius{
+    border-radius: 20px;
+}
+
+.big-radius{
+    border-radius: 50px;
+}
+
+/* COLORS STYLE */
+
+:root{
+--secondary-color: #0084FD;
+--dark-color: #333333;
+--light-color: #FFFFFF;
+--primary-color: #9792E4;
+--bg-card: #B5DDFF;
+--contrast-color: #FDC15F;
+}
+
+header, footer{
+    color: var(--light-color);
+}
+
+/* FLEX CONFIG */
+.d-flex{
+    display: flex;
+}
+
+.s-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/* CONTAINER CLASS CONFIG */
+.container{
+    padding: 15px;
+}
+
+
+
+/* HEADER CONFIG */
+header{
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 80px;
+}
+
+nav ul{
+    display: none;
+}
+
+header nav a{
+    color: var(--light-color);
+}
+
+
+/* MAIN CONFIG */
+main{
+    margin-top: 80px;
+}
+
+.even{
+    background-color: var(--primary-color);
+}
+
+.card{
+    background-color: var(--bg-card);
+    margin: 10px;
+}
+
+/* DEMO CARD CONFIG */
+
+.card-right{
+    width: 50%;
+}
+.card-right img{
+    width: 100%;
+}
+
+/* FOOTER CONFIG */
+footer{
+    background-color: var(--dark-color);
+}

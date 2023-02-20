@@ -263,12 +263,37 @@ main{
     font-weight: bold;
 }
 
+/* FEATURE SECTION CONFIG */
+#features h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 /* FEATURE CARD CONFIG */
 .benefit{
     background-color: var(--light-color);
-
+    color: var(--primary-color);
 }
+
+.benefit > h3{
+    font-size: 40px;
+}
+
+.benefit > h3, h4, p{
+    padding: 10px;
+}
+
+.benefit button{
+    padding: 10px;
+    color: var(--light-color);
+    background-color: #9792E4;
+    border: 0;
+    width: 40%;
+    border-radius: 15px;
+}
+
+
 /* FOOTER CONFIG */
 footer{
     background-color: var(--dark-color);

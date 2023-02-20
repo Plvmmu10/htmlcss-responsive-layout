@@ -325,6 +325,29 @@ main{
     font-size: 20px;
 }
 
+/* CALL TO ACTION SECTION CONFIG */
+
+#call-to-action > p,h2,h3{
+    padding: 10px;
+}
+
+#call-to-action p,h2,a{
+    color: var(--light-color);
+}
+
+#call-to-action h3{
+    color: var(--contrast-color);
+    font-size: 50px;
+}
+
+#call-to-action{
+    text-align: center;
+}
+
+#call-to-action button{
+    color: var(--primary-color);
+    width: 50%;
+}
 /* FOOTER CONFIG */
 footer{
     background-color: var(--dark-color);

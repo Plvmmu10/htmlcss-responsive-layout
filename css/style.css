@@ -528,7 +528,7 @@ footer a{
     #planning .container{
         display: flex;
         margin: 0 auto;
-        width: 70%;
+        max-width: 1200px;
         position: relative;
     }
     
@@ -539,8 +539,9 @@ footer a{
     .planning-right{
         width: 30%;
         height: 100%;
-        position: relative;
-        bottom: -100px;
+        display: flex;
+        flex-flow: column;
+        align-self: flex-end;
     }
 
     .big-img-box{

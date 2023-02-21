@@ -15,6 +15,10 @@ ul{
     list-style: none;
 }
 
+section {
+    scroll-margin-top: 80px;
+}
+
 /* FONT */
 body{
     font-family: 'PT Sans', sans-serif;
@@ -126,6 +130,14 @@ nav ul li{
 nav ul button a{
     color: var(--secondary-color);
     text-align: center;
+}
+
+.hamburgermenu:hover ~ ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: grey; 
+    flex-flow: column;  
 }
 
 
@@ -458,7 +470,6 @@ footer a{
 
 
     nav ul{
-        display: block;
         display: flex;
         justify-content: space-between;
         align-items: center;     

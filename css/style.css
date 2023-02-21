@@ -513,14 +513,14 @@ footer a{
     }
 
     .card-right{
-        width: 50%;
+        width: 60%;
+        display: flex;
+        align-self: stretch;
     }
 
     .card-right img{       
         width: 100%;
         display: block;
-        position: relative;
-        bottom: -10%;
     }
 
     .card-left button{

@@ -333,6 +333,10 @@ main{
 
 /* CALL TO ACTION SECTION CONFIG */
 
+#call-to-action p:first-child{
+    text-transform: uppercase;
+}
+
 #call-to-action > p,h2,h3{
     padding: 10px;
 }
@@ -352,7 +356,6 @@ main{
 
 #call-to-action button{
     color: var(--primary-color);
-    width: 50%;
 }
 
 /* FOOTER CONFIG */
@@ -508,21 +511,29 @@ footer a{
         display: flex;
         margin: 0 auto;
         width: 70%;
+        position: relative;
     }
     
     .planning-left{
-        margin-right: 20px;
         width: 50%;
     }
 
     .planning-right{
-        width: 50%;
+        width: 30%;
         height: 100%;
+        position: relative;
+        bottom: -100px;
     }
 
-    .planning-right img{
+    .big-img-box{
         width: 100%;
     }
+
+    .developement-content{
+        width: 100%;
+    }
+
+    
 
     /* Testimonial section */
 

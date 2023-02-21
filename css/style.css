@@ -101,11 +101,14 @@ header{
 
 nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 nav ul{
     display: none;
+    display: flex;
+    align-items: center;
 }
 
 nav i{
@@ -115,6 +118,15 @@ nav i{
 
 header nav a{
     color: var(--light-color);
+}
+
+nav ul li{
+    padding: 5px;
+}
+
+nav ul button a{
+    color: var(--secondary-color);
+    text-align: center;
 }
 
 

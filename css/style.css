@@ -66,6 +66,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 3px;
 }
 
 .app-store > *{
@@ -303,6 +304,7 @@ main{
     background-color: #9792E4;
     border: 0;
     width: 40%;   
+    letter-spacing: 3px;
 }
 
 /* ABOUT US SECTION CONFIG */
@@ -356,6 +358,9 @@ main{
 
 #call-to-action button{
     color: var(--primary-color);
+    font-size: 20px;
+    padding: 25px;
+    width: 200px;
 }
 
 /* FOOTER CONFIG */

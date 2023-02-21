@@ -23,6 +23,7 @@ p{
     line-height: 1.7rem;
 }
 
+
 /* FONT */
 body{
     font-family: 'PT Sans', sans-serif;
@@ -134,6 +135,7 @@ nav ul li{
 nav ul button a{
     color: var(--secondary-color);
     text-align: center;
+    padding: 5px;
 }
 
 .hamburgermenu:hover ~ ul{
@@ -209,6 +211,9 @@ main{
 }
 
 /* PLANNING SECTION CONFIG */
+.planning-left{
+    padding-bottom: 20px;
+}
 .planning-left img{
     width: 100%;
 }
@@ -233,6 +238,10 @@ main{
 
 .developement-content > *{
     padding: 15px;
+}
+
+.developement-content p{
+    font-style: italic;
 }
 
 .developement-content button{
@@ -595,6 +604,9 @@ footer a{
     }
 
     .about-left{
-        width: 30%;
+        width: 15%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 }
